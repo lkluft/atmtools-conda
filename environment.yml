@@ -22,6 +22,7 @@ dependencies:
         - setuptools>=0.7.2
         - sphinx
         - sphinx_rtd_theme
+        - typhon
         - xarray>=0.10.2
 channels:
         - defaults
