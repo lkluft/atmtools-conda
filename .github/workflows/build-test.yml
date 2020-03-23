@@ -1,0 +1,30 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+  schedule:
+    # Run GitHub action very night to catch issues with dependencies
+    - cron:  '0 1 * * *'
+
+jobs:
+  build:
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-18.04, windows-latest, macos-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: goanpeca/setup-miniconda@v1
+      - name: Information about the conda installation
+        run: conda info
+      - name: Full conda configuration
+        run: conda config --show
+      - name: Setup conda environment
+        run: conda env create --quiet --file environment.yml --name ci-test
+      - name: List installed packages
+        run: conda list --name ci-test
