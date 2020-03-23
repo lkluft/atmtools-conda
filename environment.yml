@@ -1,29 +1,50 @@
 name: atmtools-py37
 dependencies:
         - python>=3.7
+        - autopep8
+        - black
         - cartopy
         - cython
+        - dask
         - flake8
         - gdal
+        - h5py
+        - joblib
+        - jupyter
+        - jupyter_contrib_nbextensions
         - keras
+        - line_profiler
         - matplotlib>=1.4
+        - memory_profiler
         - netCDF4>=1.1.1
+        - nodejs
+        - nose
         - numba
         - numexpr
         - numpy>=1.13
         - pandas
+        - pep8
         - pint
+        - pyflakes
         - pykdtree
+        - pylint
         - pymongo
+        - pytables
         - pytest
         - scikit-image
         - scikit-learn
         - scipy>=0.15.1
+        - seaborn
         - setuptools>=0.7.2
         - sphinx
         - sphinx_rtd_theme
+        - spyder
+        - sympy
+        - twine
         - typhon
+        - uncertainties
         - xarray>=0.10.2
 channels:
         - defaults
         - conda-forge
+        - rttools
