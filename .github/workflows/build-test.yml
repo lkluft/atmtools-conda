@@ -9,6 +9,7 @@ on:
 
 jobs:
   build:
+    if: (github.event_name == 'schedule' && github.repository == 'atmtools/atmtools-conda') || (github.event_name != 'schedule')
     name: ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
 
