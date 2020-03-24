@@ -4,6 +4,8 @@ on:
   push:
   pull_request:
   schedule:
+    - branches: master
+    - refs:
     # Run GitHub action very night to catch issues with dependencies
     - cron:  '0 1 * * *'
 
