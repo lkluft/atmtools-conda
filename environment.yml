@@ -8,7 +8,6 @@ dependencies:
         - dask
         - docutils
         - flake8
-        - gdal
         - h5py
         - joblib
         - jupyter
