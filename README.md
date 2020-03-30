@@ -10,7 +10,7 @@ cp condarc $HOME/.condarc
 ```
 
 The [environment.yml](environment.yml) can be used to either create a new
-environemnt or to update the existing base environment.
+environment or to update the existing base environment.
 ```bash
 conda env create -f environment.yml  # new environment
 conda env update -n base -f environment.yml  # update `base` environment
