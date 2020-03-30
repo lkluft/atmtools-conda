@@ -6,6 +6,7 @@ dependencies:
         - cartopy
         - cython
         - dask
+        - docutils
         - flake8
         - gdal
         - h5py
@@ -14,6 +15,7 @@ dependencies:
         - jupyter_contrib_nbextensions
         - jupyterlab
         - keras
+        - lark-parser
         - line_profiler
         - matplotlib>=1.4
         - memory_profiler
