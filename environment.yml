@@ -12,6 +12,7 @@ dependencies:
         - joblib
         - jupyter
         - jupyter_contrib_nbextensions
+        - jupyterlab
         - keras
         - line_profiler
         - matplotlib>=1.4
