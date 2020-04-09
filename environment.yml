@@ -1,6 +1,7 @@
 name: atmtools-py37
 dependencies:
         - python>=3.7
+        - astropy
         - autopep8
         - black
         - cartopy
