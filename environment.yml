@@ -29,6 +29,7 @@ dependencies:
         - pep8
         - pint
         - pyflakes
+        - pyhdf
         - pykdtree
         - pylint
         - pymongo
